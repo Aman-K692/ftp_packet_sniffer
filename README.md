@@ -1,6 +1,6 @@
 # FTP Packet Inspector & Extractor
 
-A high-performance C++ utility that analyzes raw PCAP network traffic, reconstructs FTP file transfers, and extracts files based on TCP stream analysis.
+A C++ utility that analyzes raw PCAP network traffic, reconstructs FTP file transfers, and extracts files based on TCP stream analysis.
 
 ## 🚀 Features
 
@@ -19,6 +19,24 @@ A high-performance C++ utility that analyzes raw PCAP network traffic, reconstru
 sudo apt-get update
 sudo apt-get install build-essential libpcap-dev cmake
 ```
+
+
+
+## Steps to build and run the program
+
+# using CMake
+
+mkdir build && cd build
+cmake ..
+make
+./ftp_inspector ../traffic.pcap
+
+# Manual Compilation
+
+g++ -o ftp_inspector src/main.cpp
+./ftp_inspector traffic.pcap
+
+
 
 ## Screenshots
 
